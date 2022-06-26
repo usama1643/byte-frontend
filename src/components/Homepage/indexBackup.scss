@@ -1,0 +1,404 @@
+.main {
+    width: 100% !important;
+}
+
+.resturant-image {
+    object-fit: fill !important;
+}
+
+
+.main-banner-div {
+    width: 100% !important;
+    margin-bottom: 10px;
+
+    .main-banner-content {
+        @media screen and (min-width: 1200px) {
+            margin: 110px 0px 0px 100px !important;
+        }
+
+        @media screen and (max-width: 1200px) {
+            margin: 20px 0px 0px 10px !important;
+        }
+    }
+
+
+    .content-1 {
+        @media screen and (min-width: 1200px) {
+            font-size: 75px !important;
+            font-weight: 700;
+            line-height: 80px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 20px !important;
+            font-weight: 700;
+        }
+    }
+
+    .content-2 {
+        @media screen and (min-width: 1200px) {
+            font-size: 75px !important;
+            font-weight: 700;
+            color: #E2483F;
+            line-height: 80px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 20px !important;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+    }
+
+    .content-3 {
+        @media screen and (min-width: 1200px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 14px !important;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+            line-height: 32px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 12px !important;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+    }
+
+    .order-now {
+        @media screen and (min-width: 1200px) {
+            background-color: #E2483F !important;
+            color: #FFFFFF !important;
+            border-radius: 20px !important;
+            text-transform: capitalize !important;
+            margin-right: 0px !important;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            background-color: #E2483F !important;
+            color: #FFFFFF !important;
+            border-radius: 20px !important;
+            text-transform: capitalize !important;
+            margin-right: 0px !important;
+            font-size: 14px;
+        }
+
+    }
+
+    .download-app {
+        @media screen and (min-width: 1200px) {
+            background-color: #FFFFFF !important;
+            border-radius: 1800px !important;
+            width: 10px;
+            height: 45px;
+            min-width: 45px;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+        }
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+            background-color: #FFFFFF !important;
+            border-radius: 1800px !important;
+            width: 10px;
+            height: 45px;
+            min-width: 45px;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+        }
+
+    }
+
+    .download-button-content {
+        @media screen and (min-width: 1200px) {
+            color: #686D77;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+            color: #686D77;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+    }
+}
+
+.main-banner-image {
+    width: 100%;
+}
+
+
+.service-section {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .main-heading {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+
+        .heading-part {
+            color: #E2483F
+        }
+    }
+
+    .sub-heading {
+        color: #464646;
+        font-size: 14px;
+        opacity: 0.7;
+        text-align: center;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img-heading {
+        color: #383535;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .img-heading-content {
+        color: #464646;
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.7;
+    }
+
+    .content-center {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.our-resturants {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 90px;
+        padding-right: 60px;
+    }
+
+    .main-heading {
+        @media screen and (max-width: 1200px) {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .heading-part {
+            color: #E2483F
+        }
+    }
+
+    .sub-heading {
+        color: #464646;
+        font-size: 14px;
+        opacity: 0.7;
+
+        // for mobile tab
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+        }
+        // for laptop
+        @media screen and (min-width: 1200px) {
+            padding-right: 500px;
+        }
+    }
+
+    .resturants-paper {
+        margin-top: 30px;
+        margin-right: 21px;
+        margin-bottom: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 80px 0px #0000000A;
+
+        .heading {
+            margin-top: -30px !important;
+            color: #383535;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    .resturant-badge {
+        margin-bottom: 5px;
+        background-color: #f3f3f4;
+        color: #464646;
+        ;
+        text-transform: capitalize;
+        font-size: 12px !important;
+        font-weight: 400;
+        min-height: 30px;
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+
+.best-sellers {
+    margin-bottom: 70px;
+    // text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 90px;
+        padding-right: 60px;
+    }
+
+    .main-heading {
+        margin-bottom: 10px;
+        text-align: center;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .heading-part {
+            color: #E2483F
+        }
+
+    }
+
+    .sub-heading {
+        margin-bottom: 10px !important;
+        color: #464646;
+        font-size: 14px;
+        opacity: 0.7;
+        text-align: center;
+        margin: auto;
+        @media screen and (min-width: 1200px) {
+            width: 500px;
+        }
+    }
+
+    .selling-card {
+        padding: 20px;
+        height: 330px;
+        background-color: #FFFFFF;
+        border: 1px solid #E7E7E7;
+        border-radius: 10.4669px;
+
+        // @media screen and (max-width: 1200px) {
+        //     margin: auto !important;
+        // }
+
+        .img {
+            height: 160px;
+            width: 165px;
+            display: block;
+            margin: auto;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            color: #383535;
+        }
+
+        .description {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: #565656;
+            opacity: 0.7;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            color: #E2483F;
+        }
+    }
+
+}
+
+.customer-say {
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .heading {
+        font-size: 38px;
+        font-weight: 700;
+
+        .heading-part {
+            color: #E2483F
+        }
+    }
+
+    .description {
+        padding-top: 20px;
+        color: #191919;
+        opacity: 0.8;
+        font-size: 16px;
+    }
+}
+
+.get-started-with-byte {
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .heading {
+        font-size: 38px;
+        font-weight: 700;
+
+        .heading-part {
+            color: #E2483F
+        }
+    }
+
+    .description {
+        padding-top: 20px;
+        color: #464646;
+        opacity: 0.7;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}

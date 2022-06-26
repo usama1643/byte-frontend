@@ -1,29 +1,130 @@
-@media screen and (min-width: 1200px) {
-    .main-banner-div {
-        // background-color: cadetblue;
-        width: 100% !important;
-        height: 600px !important;
-        margin-bottom: 10px;
+.main {
+    width: 100% !important;
+}
 
-        .main-banner-content {
-            margin: 110px 0px 0px 100px !important;
-            // margin: 100px !important;
+.resturant-image {
+    object-fit: fill !important;
+}
+
+
+.main-banner-div {
+    width: 100% !important;
+    margin-bottom: 8%;
+
+    .main-banner-content {
+        @media screen and (max-width: 1200px) {
+            margin: 0px 0px 0px 10px;
         }
 
-        .content-1 {
-            font-size: 75px !important;
+        @media screen and (min-width: 1200px) {
+            margin: 0px 0px 0px 100px;
+        }
+
+        @media screen and (min-width: 2000px) {
+            margin: 0px 0px 0px 200px;
+        }
+    }
+
+
+    .content-1 {
+        @media screen and (max-width: 480px) {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 75px;
             font-weight: 700;
             line-height: 80px;
         }
+    }
 
-        .content-2 {
+    .content-2 {
+        @media screen and (max-width: 480px) {
+            font-size: 24px !important;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            font-size: 30px;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 40px;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            font-size: 60px;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 1200px) {
             font-size: 75px !important;
             font-weight: 700;
             color: #E2483F;
             line-height: 80px;
         }
+    }
 
-        .content-3 {
+    .content-3 {
+        @media screen and (max-width: 480px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 1200px) {
             margin-top: 30px;
             margin-bottom: 30px;
             font-size: 14px !important;
@@ -33,7 +134,46 @@
             line-height: 32px;
         }
 
-        .order-now {
+    }
+
+    .order-now {
+        @media screen and (max-width: 480px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 1200px) {
             background-color: #E2483F !important;
             color: #FFFFFF !important;
             border-radius: 20px !important;
@@ -41,8 +181,14 @@
             margin-right: 0px !important;
             font-size: 14px;
         }
+    }
 
-        .download-app {
+    .download-app {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
             background-color: #FFFFFF !important;
             border-radius: 1800px !important;
             width: 10px;
@@ -51,7 +197,44 @@
             box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
         }
 
-        .download-button-content {
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            background-color: #FFFFFF !important;
+            border-radius: 1800px !important;
+            width: 10px;
+            height: 45px;
+            min-width: 45px;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            background-color: #FFFFFF !important;
+            border-radius: 1800px !important;
+            width: 10px;
+            height: 45px;
+            min-width: 45px;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+        }
+    }
+
+    .download-button-content {
+        
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            color: #686D77;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            color: #686D77;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        @media screen and (min-width: 1200px) {
             color: #686D77;
             margin-left: 20px;
             font-weight: 500;
@@ -59,71 +242,7 @@
     }
 
     .main-banner-image {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .main-banner-div {
-        background-color: darkgray;
         width: 100% !important;
-        height: 280px !important;
-
-        .main-banner-content {
-            margin: 20px 0px 0px 10px !important;
-            // margin: 100px !important;
-        }
-
-        .content-1 {
-            font-size: 20px !important;
-            font-weight: 700;
-        }
-
-        .content-2 {
-            font-size: 20px !important;
-            font-weight: 700;
-            color: #E2483F;
-        }
-
-        .content-3 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 12px !important;
-            font-weight: 400;
-            color: #464646;
-            opacity: 0.7;
-            // line-height: 32px;
-        }
-
-        .order-now {
-            background-color: #E2483F !important;
-            color: #FFFFFF !important;
-            border-radius: 20px !important;
-            text-transform: capitalize !important;
-            margin-right: 0px !important;
-            font-size: 14px;
-        }
-
-        .download-app {
-            display: none;
-            background-color: #FFFFFF !important;
-            border-radius: 1800px !important;
-            width: 10px;
-            height: 45px;
-            min-width: 45px;
-            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
-        }
-
-        .download-button-content {
-            display: none;
-            color: #686D77;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-
-        .main-banner-image {
-            padding-top: 50px;
-        }
     }
 }
 
@@ -136,9 +255,17 @@
     }
 
     .main-heading {
-        font-size: 50px;
-        font-weight: 700;
-        text-align: center;
+        @media screen and (max-width: 1200px) {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+        }
 
         .heading-part {
             color: #E2483F
@@ -225,6 +352,7 @@
         box-shadow: 0px 4px 80px 0px #0000000A;
 
         .heading {
+            margin-top: -30px !important;
             color: #383535;
             font-size: 18px;
             font-weight: 600;
@@ -280,13 +408,16 @@
         font-size: 14px;
         opacity: 0.7;
         text-align: center;
-        width: 500px;
         margin: auto;
+
+        @media screen and (min-width: 1200px) {
+            width: 500px;
+        }
     }
 
     .selling-card {
         padding: 20px;
-        height: 330px;
+        // height: 330px;
         background-color: #FFFFFF;
         border: 1px solid #E7E7E7;
         border-radius: 10.4669px;
@@ -300,6 +431,11 @@
             width: 165px;
             display: block;
             margin: auto;
+
+            @media screen and (max-width: 480px) {
+                height: 100px;
+                width: 100px;
+            }
         }
 
         .name {
@@ -307,6 +443,11 @@
             font-weight: 600;
             text-align: center;
             color: #383535;
+
+            @media screen and (max-width: 480px) {
+                font-size: 14px;
+                font-weight: 600;
+            }
         }
 
         .description {
@@ -315,6 +456,11 @@
             text-align: center;
             color: #565656;
             opacity: 0.7;
+
+            @media screen and (max-width: 480px) {
+                font-size: 11px;
+                font-weight: 400;
+            }
         }
 
         .price {
@@ -322,13 +468,18 @@
             font-weight: 600;
             text-align: center;
             color: #E2483F;
+
+            @media screen and (max-width: 480px) {
+                font-size: 14px;
+            }
         }
     }
 
 }
 
 .customer-say {
-    padding-bottom: 170px;
+    padding-bottom: 70px;
+
     @media screen and (min-width: 1200px) {
         padding-left: 60px;
         padding-right: 60px;
@@ -346,11 +497,107 @@
         .heading-part {
             color: #E2483F
         }
+
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            font-weight: 600;
+        }
     }
+
     .description {
         padding-top: 20px;
-        color: #191919;
-        opacity: 0.8;
-        font-size: 16px;
+        color: #464646;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+}
+
+.get-started-with-byte {
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .heading {
+        font-size: 38px;
+        font-weight: 700;
+
+        .heading-part {
+            color: #E2483F
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+
+    .description {
+        padding-top: 20px;
+        color: #464646;
+        opacity: 0.7;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}
+
+
+// .scrolling-wrapper {
+//     overflow-x: scroll;
+//     overflow-y: hidden;
+//     white-space: nowrap;
+
+//     .mobile-resturant-paper {
+//         display: inline-block;
+//         width: 200px;
+//         height: 200px;
+//     }
+// }
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+
+    // height: 210px;
+    margin-bottom: 20px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-resturant-paper {
+        margin: 10px;
+        display: inline-block;
+        width: 180px;
+
+        // height: 150px;
+        .returant-logo {
+            height: 130px;
+            object-fit: fill !important;
+        }
+
+        .returant-name {
+            width: 180px;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .returant-rating {
+            width: 180px;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 20px;
+        }
     }
 }

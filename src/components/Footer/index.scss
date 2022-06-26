@@ -1,0 +1,42 @@
+.footer {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1200px) {
+        padding-left: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 55px;
+        padding-right: 5px;
+    }
+
+    .company-description {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #464646;
+        // line-height: 23px;
+    }
+
+    .section-heading {
+        color: #E4534B;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .links {
+        line-height: 30px;
+        color: #464646;
+        font-size: 15px;
+    }
+
+    .app-name-description {
+        font-size: 16px;
+        font-weight: 600;
+        color: #2D2D2D;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
