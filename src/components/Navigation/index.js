@@ -29,13 +29,13 @@ class Navigation extends React.Component {
                             <div class="collapse navbar-collapse" id="navbarCollapse">
                                 
                                 <div class="navbar-nav ms-auto">
-                                    <a href="https://www.google.com/" class="nav-item nav-link pe-4">About Us</a>
-                                    <a href="https://www.google.com/" class="nav-item nav-link me-4">Resturants</a>
-                                    <a href="https://www.google.com/" class="nav-item nav-link me-4">Our Locations</a>
-                                    <a href="https://www.google.com/" class="nav-item nav-link me-4">Contact</a>
-                                    <a href="https://www.google.com/" class="nav-item nav-link me-4">Careers</a>
-                                    <a href="https://www.google.com/" class="nav-item nav-link me-4">Blog</a>
-                                    <Button variant="contained" className="button-style">Login</Button>
+                                    <a href="https://web.thebyte.app/en/" class="nav-item nav-link pe-4">About Us</a>
+                                    <a href="https://web.thebyte.app/en/" class="nav-item nav-link me-4">Resturants</a>
+                                    <a href="https://web.thebyte.app/en/" class="nav-item nav-link me-4">Our Locations</a>
+                                    <a href="https://web.thebyte.app/en/" class="nav-item nav-link me-4">Contact</a>
+                                    <a href="https://www.ycombinator.com/companies/byte" class="nav-item nav-link me-4">Careers</a>
+                                    <a href="https://web.thebyte.app/en/" class="nav-item nav-link me-4">Blog</a>
+                                    <Button variant="contained" className="button-style" onClick={()=> window.open("https://web.thebyte.app/en/", "_blank")}>Login</Button>
                                 </div>
                             </div>
                         </div>

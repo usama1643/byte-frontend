@@ -55,25 +55,38 @@ class Resturants extends React.Component {
         this.setState({
             is_loading: true
         })
-        let resturant_ids = [
-            299644, 299647, 299645, 299672, 299694, 299694, 299643,
-            299646, 299739, 299804, 299846, 299699, 299613
+        let resturants = [
+            "https://web.thebyte.app/en/store/Overloaded---Gulberg/299644",
+            "https://web.thebyte.app/en/store/Wrap-and-Roll---Gulberg/299647",
+            "https://web.thebyte.app/en/store/Crustys---Gulberg/299645",
+            "https://web.thebyte.app/en/store/Pizza-Now---Gulberg/299672",
+            "https://web.thebyte.app/en/store/Burger-Time---Gulberg/299694",
+            "https://web.thebyte.app/en/store/Smackin---Gulberg/299643",
+            "https://web.thebyte.app/en/store/Just-Wing-It---Gulberg/299646",
+            "https://web.thebyte.app/en/store/Breakfast-247---Gulberg/299739",
+            "https://web.thebyte.app/en/store/Food-Court---Gulberg/299804",
+            "https://web.thebyte.app/en/store/Moes-Thin-Crust---Launching-Soon/299846",
+            "https://web.thebyte.app/en/store/Biryani-Sultanat---Gulberg/299699",
+            "https://web.thebyte.app/en/store/Meal-Express/299613"
         ]
-        for (let i = 0; i < resturant_ids.length; i++) {
-            this.getResturants(resturant_ids[i])
+        for (let i = 0; i < resturants.length; i++) {
+            this.getResturants(resturants[i])
         }
         this.setState({
             is_loading: false
         })
     }
 
-    getResturants = (id) => {
+    getResturants = (resturant) => {
         let { resturants_data } = this.state
+
         let data = {
             "api_key": "8349870a68beae18c130cb16435d1d14",
-            "user_id": id
+            "user_id": resturant.split('/').pop()
         }
         ResturantApis.getResturant(data).then(data => {
+            let final_data = data['data']
+            final_data.resturant_url = resturant
             resturants_data.push(data['data'])
             this.setState({
                 resturants_data: resturants_data,
@@ -101,6 +114,10 @@ class Resturants extends React.Component {
         }
     };
 
+    openResturant = (url) => {
+        window.open(url, "_blank")
+    }
+
 
     render() {
         let { resturants_data, is_loading } = this.state
@@ -119,9 +136,16 @@ class Resturants extends React.Component {
                                         {
                                             resturants_data && resturants_data.map(resturant =>
                                                 <div className="mobile-resturant-paper">
-                                                    <img className="returant-logo" src={resturant.logo} alt="" />
+                                                    <img className="returant-logo" src={resturant.logo} alt="" onClick={() => this.openResturant(resturant.resturant_url)} />
+                                                    <Rating
+                                                        size="small"
+                                                        style={{ backgroundColor: "#FDC55E", color: "#FFFFFF", borderRadius: '50px', display: 'flex', width: 'fit-content', bottom: '30px', left: '10px' }}
+                                                        name="read-only"
+                                                        value={resturant.store_rating}
+                                                        readOnly
+                                                    />
                                                     <Typography className="returant-name">{resturant.store_name}</Typography>
-                                                    <Typography  className="returant-rating">({resturant.store_rating})</Typography>
+                                                    {/* <Typography className="returant-rating">({resturant.store_rating})</Typography> */}
                                                 </div>
                                             )}
                                     </div>
@@ -152,6 +176,7 @@ class Resturants extends React.Component {
                                                         height="250"
                                                         image={resturant.logo}
                                                         alt={resturant.store_name}
+                                                        onClick={() => this.openResturant(resturant.resturant_url)}
                                                     />
                                                     <CardContent>
                                                         <Rating

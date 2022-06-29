@@ -1,0 +1,603 @@
+.main {
+    width: 100% !important;
+}
+
+.resturant-image {
+    object-fit: fill !important;
+}
+
+
+.main-banner-div {
+    width: 100% !important;
+    margin-bottom: 8%;
+
+    .main-banner-content {
+        @media screen and (max-width: 1200px) {
+            margin: 0px 0px 0px 10px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin: 0px 0px 0px 100px;
+        }
+
+        @media screen and (min-width: 2000px) {
+            margin: 0px 0px 0px 200px;
+        }
+    }
+
+
+    .content-1 {
+        @media screen and (max-width: 480px) {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 75px;
+            font-weight: 700;
+            line-height: 80px;
+        }
+    }
+
+    .content-2 {
+        @media screen and (max-width: 480px) {
+            font-size: 24px !important;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            font-size: 30px;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            font-size: 40px;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            font-size: 60px;
+            font-weight: 700;
+            color: #E2483F;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 75px !important;
+            font-weight: 700;
+            color: #E2483F;
+            line-height: 80px;
+        }
+    }
+
+    .content-3 {
+        @media screen and (max-width: 480px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 14px !important;
+            font-weight: 400;
+            color: #464646;
+            opacity: 0.7;
+            line-height: 32px;
+        }
+
+    }
+
+    .order-now {
+        @media screen and (max-width: 480px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            background-color: #E2483F;
+            color: #FFFFFF;
+            border-radius: 20px;
+            text-transform: capitalize;
+            margin-right: 0px;
+            font-size: 11px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            background-color: #E2483F !important;
+            color: #FFFFFF !important;
+            border-radius: 20px !important;
+            text-transform: capitalize !important;
+            margin-right: 0px !important;
+            font-size: 14px;
+        }
+    }
+
+    .download-app {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            background-color: #FFFFFF !important;
+            border-radius: 1800px !important;
+            width: 10px;
+            height: 45px;
+            min-width: 45px;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            background-color: #FFFFFF !important;
+            border-radius: 1800px !important;
+            width: 10px;
+            height: 45px;
+            min-width: 45px;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            background-color: #FFFFFF !important;
+            border-radius: 1800px !important;
+            width: 10px;
+            height: 45px;
+            min-width: 45px;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+        }
+    }
+
+    .download-button-content {
+        
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            color: #686D77;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            color: #686D77;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        @media screen and (min-width: 1200px) {
+            color: #686D77;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .main-banner-image {
+        width: 100% !important;
+    }
+}
+
+.service-section {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .main-heading {
+        @media screen and (max-width: 1200px) {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 50px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .heading-part {
+            color: #E2483F
+        }
+    }
+
+    .sub-heading {
+        color: #464646;
+        font-size: 14px;
+        opacity: 0.7;
+        text-align: center;
+    }
+
+    .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img-heading {
+        color: #383535;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .img-heading-content {
+        color: #464646;
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.7;
+    }
+
+    .content-center {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.our-resturants {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 90px;
+        padding-right: 60px;
+    }
+
+    .main-heading {
+        @media screen and (max-width: 1200px) {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .heading-part {
+            color: #E2483F
+        }
+    }
+
+    .sub-heading {
+        color: #464646;
+        font-size: 14px;
+        opacity: 0.7;
+
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-right: 500px;
+        }
+    }
+
+    .resturants-paper {
+        margin-top: 30px;
+        margin-right: 21px;
+        margin-bottom: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 80px 0px #0000000A;
+
+        .heading {
+            margin-top: -30px !important;
+            color: #383535;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    .resturant-badge {
+        margin-bottom: 5px;
+        background-color: #f3f3f4;
+        color: #464646;
+        ;
+        text-transform: capitalize;
+        font-size: 12px !important;
+        font-weight: 400;
+        min-height: 30px;
+        text-align: center;
+        border-radius: 3px;
+    }
+}
+
+.best-sellers {
+    margin-bottom: 70px;
+    // text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 90px;
+        padding-right: 60px;
+    }
+
+    .main-heading {
+        margin-bottom: 10px;
+        text-align: center;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .heading-part {
+            color: #E2483F
+        }
+
+    }
+
+    .sub-heading {
+        margin-bottom: 10px !important;
+        color: #464646;
+        font-size: 14px;
+        opacity: 0.7;
+        text-align: center;
+        margin: auto;
+
+        @media screen and (min-width: 1200px) {
+            width: 500px;
+        }
+    }
+
+    .selling-card {
+        padding: 20px;
+        // height: 330px;
+        background-color: #FFFFFF;
+        border: 1px solid #E7E7E7;
+        border-radius: 10.4669px;
+
+        // @media screen and (max-width: 1200px) {
+        //     margin: auto !important;
+        // }
+
+        .img {
+            height: 160px;
+            width: 165px;
+            display: block;
+            margin: auto;
+
+            @media screen and (max-width: 480px) {
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            color: #383535;
+
+            @media screen and (max-width: 480px) {
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        .description {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: #565656;
+            opacity: 0.7;
+
+            @media screen and (max-width: 480px) {
+                font-size: 11px;
+                font-weight: 400;
+            }
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            color: #E2483F;
+
+            @media screen and (max-width: 480px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+.customer-say {
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .heading {
+        font-size: 38px;
+        font-weight: 700;
+
+        .heading-part {
+            color: #E2483F
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+
+    .description {
+        padding-top: 20px;
+        color: #464646;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+}
+
+.get-started-with-byte {
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .img {
+        height: 400px;
+        width: 500px;
+    }
+
+    .heading {
+        font-size: 38px;
+        font-weight: 700;
+
+        .heading-part {
+            color: #E2483F
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+
+    .description {
+        padding-top: 20px;
+        color: #464646;
+        opacity: 0.7;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}
+
+
+// .scrolling-wrapper {
+//     overflow-x: scroll;
+//     overflow-y: hidden;
+//     white-space: nowrap;
+
+//     .mobile-resturant-paper {
+//         display: inline-block;
+//         width: 200px;
+//         height: 200px;
+//     }
+// }
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+
+    // height: 210px;
+    margin-bottom: 20px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-resturant-paper {
+        margin: 10px;
+        display: inline-block;
+        width: 180px;
+
+        // height: 150px;
+        .returant-logo {
+            height: 130px;
+            object-fit: fill !important;
+        }
+
+        .returant-name {
+            width: 180px;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .returant-rating {
+            width: 180px;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+    }
+}

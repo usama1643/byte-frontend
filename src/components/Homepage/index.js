@@ -26,15 +26,27 @@ class HomePage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
+            // best_sellers: [
+            //     { image: selling1, name: "Patty Burger", description: "lorem ipsum dolalr sit lorem ipsum", price: 300 },
+            //     { image: selling2, name: "Son of Bun", description: "lorem ipsum dolalr sit lorem ipsum", price: 950 },
+            //     { image: selling3, name: "Seed Pumpkin", description: "lorem ipsum dolalr sit lorem ipsum", price: 270 },
+            //     { image: selling4, name: "Shwarma", description: "lorem ipsum dolalr sit lorem ipsum", price: 200 },
+            //     { image: selling5, name: "Fries", description: "lorem ipsum dolalr sit lorem ipsum", price: 150 },
+            //     { image: selling6, name: "Fanta", description: "lorem ipsum dolalr sit lorem ipsum", price: 100 },
+            //     { image: selling7, name: "Buldozer", description: "lorem ipsum dolalr sit lorem ipsum", price: 1000 },
+            //     { image: selling8, name: "Family Pack", description: "lorem ipsum dolalr sit lorem ipsum", price: 300 },
+            // ]
             best_sellers: [
-                { image: selling1, name: "Patty Burger", description: "lorem ipsum dolalr sit lorem ipsum", price: 300 },
-                { image: selling2, name: "Son of Bun", description: "lorem ipsum dolalr sit lorem ipsum", price: 950 },
-                { image: selling3, name: "Seed Pumpkin", description: "lorem ipsum dolalr sit lorem ipsum", price: 270 },
-                { image: selling4, name: "Shwarma", description: "lorem ipsum dolalr sit lorem ipsum", price: 200 },
-                { image: selling5, name: "Fries", description: "lorem ipsum dolalr sit lorem ipsum", price: 150 },
-                { image: selling6, name: "Fanta", description: "lorem ipsum dolalr sit lorem ipsum", price: 100 },
-                { image: selling7, name: "Buldozer", description: "lorem ipsum dolalr sit lorem ipsum", price: 1000 },
-                { image: selling8, name: "Family Pack", description: "lorem ipsum dolalr sit lorem ipsum", price: 300 },
+                { image: selling1, name: "Peri Peri", description: "Crusty's", price: 300 },
+                { image: selling2, name: "Malai Boti", description: "Pizza Now", price: 950 },
+                { image: selling3, name: "Chicken Fajita", description: "Crusty's", price: 270 },
+                { image: selling4, name: "Special", description: "Pizza Now", price: 200 },
+                { image: selling5, name: "Fajita Star", description: "Roller Toaster", price: 150 },
+                { image: selling6, name: "Crisp'N' Crunch Burger", description: "Smackin", price: 100 },
+                { image: selling7, name: "Sweet Thai Chilli Wings", description: "Just Wing it", price: 1000 },
+                { image: selling8, name: "Madrasi Handi", description: "Lazeez", price: 300 },
+                { image: selling8, name: "Tikka Biryani", description: "Biryani Sultanat:", price: 300 },
+                { image: selling8, name: "Mughalai Biryani", description: "Biryani Sultanat", price: 300 },
             ]
         }
     }
@@ -50,7 +62,7 @@ class HomePage extends React.Component {
             <div className='main'>
                 <div className='main-banner-div' id="mainBannerSection">
                     <Grid container direction="row" spacing={3}>
-                        <Grid item xs={7} m="auto">
+                        <Grid item md={7} lg={7} xs={12} sm={12} m="auto">
                             <div className='main-banner-content'>
                                 <Typography className='content-1'>Freshness in</Typography>
                                 <Typography className='content-2'>Every Bite</Typography>
@@ -58,18 +70,18 @@ class HomePage extends React.Component {
 
                                 <Grid container direction="row" spacing={3}>
                                     <Grid item>
-                                        <Button size='large' className='order-now' variant='contained'>Order Now</Button>
+                                        <Button size='large' className='order-now' variant='contained' onClick={()=> window.open("https://web.thebyte.app/en/", "_blank")}>Order Now</Button>
                                     </Grid>
                                     <Grid item>
-                                        <a href='#getStartedSection' style={{textDecuration: "none"}}>
-                                            <Button variant='contained' className='download-app'><img src={playStore}  alt="" /></Button>
-                                            <span  className='download-button-content'>Download App</span>
+                                        <a href='#getStartedSection' style={{ textDecuration: "none" }}>
+                                            <Button variant='contained' className='download-app'><img src={playStore} alt="" /></Button>
+                                            <span className='download-button-content'>Download App</span>
                                         </a>
                                     </Grid>
                                 </Grid>
                             </div>
                         </Grid>
-                        <Grid item xs={5} m="auto">
+                        <Grid item md={5} lg={5} xs={12} sm={12} m="auto">
                             <img className='main-banner-image' src={sliderImage} alt="" />
                         </Grid>
                     </Grid>
@@ -77,7 +89,7 @@ class HomePage extends React.Component {
 
                 <div className='service-section' id="serviceSection">
                     <Typography className='main-heading'>We Offer <span className='heading-part'>Best Services</span></Typography>
-                    <Typography className='sub-heading'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr <br /> sitlorem ipsum dolalr sitlorem ipsum dolalr sit</Typography>
+                    <Typography className='sub-heading'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr.</Typography>
                     <Grid container justifyContent="" sx={{ flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" }, mt: 3 }} spacing={2}>
                         <Grid item xs={10} md={3} lg={3} m='auto'>
                             <Grid container direction="column">
@@ -123,70 +135,136 @@ class HomePage extends React.Component {
 
                 <div className='our-resturants' id="ourResturantSection">
                     <Typography className='main-heading'>Our <span className='heading-part'>Resturants</span></Typography>
-                    <Typography className='sub-heading'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr sitlorem ipsum dolalr sitlorem ipsum dolalr sit</Typography>
+                    <Typography className='sub-heading'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr.</Typography>
                     <Resturants is_desktop={this.props.is_desktop} />
                 </div>
 
                 <div className='best-sellers' id="bestSellerSection">
-                    <Typography className='main-heading'>Best <span className='heading-part'>Sellers</span></Typography>
+                    <Typography className='main-heading'>Best <span className='heading-part'>Selling</span></Typography>
                     <Typography className='sub-heading'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr sitlorem ipsum dolalr sitlorem ipsum dolalr sit</Typography>
-                    <Grid container direction="row" spacing={1}>
-                        {
-                            this.state.best_sellers.map(best => (
-                                <Grid item md={3} lg={3} sm={6} xs={6} m="auto">
-                                    <div className='selling-card'>
-                                        <Grid container direction="column" spacing={1}>
-                                            <Grid item>
-                                                <img src={best.image} className="img" alt=""/>
+                    {
+                        !this.props.is_desktop ?
+                            <div class="sellers-scrolling-wrapper">
+                                {
+                                    this.state.best_sellers.map(seller =>
+                                        <div className="mobile-seller-paper">
+                                            <Grid container direction="column" spacing={1}>
+                                                <Grid item>
+                                                    <img src={seller.image} className="img" alt="" />
+                                                </Grid>
+                                                <Grid item>
+                                                    <Typography className='name'>{seller.name}</Typography>
+                                                </Grid>
+                                                <Grid item>
+                                                    <Typography className='description'>{seller.description}</Typography>
+                                                </Grid>
+                                                <Grid item>
+                                                    <Typography className='price'>Rs. {seller.price}</Typography>
+                                                </Grid>
                                             </Grid>
-                                            <Grid item>
-                                                <Typography className='name'>{best.name}</Typography>
-                                            </Grid>
-                                            <Grid item>
-                                                <Typography className='description'>{best.description}</Typography>
-                                            </Grid>
-                                            <Grid item>
-                                                <Typography className='price'>Rs. {best.price}</Typography>
-                                            </Grid>
-                                        </Grid>
-                                    </div>
-                                </Grid>
+                                        </div>
+                                    )}
+                            </div>
+                            :
 
-                            ))
-                        }
-                    </Grid>
+                            <Grid container direction="row" spacing={1}>
+                                {
+                                    this.state.best_sellers.map(best => (
+                                        <Grid item sm={4} md={3} m="auto">
+                                            <div className='selling-card'>
+                                                <Grid container direction="column" spacing={1}>
+                                                    <Grid item>
+                                                        <img src={best.image} className="img" alt="" />
+                                                    </Grid>
+                                                    <Grid item>
+                                                        <Typography className='name'>{best.name}</Typography>
+                                                    </Grid>
+                                                    <Grid item>
+                                                        <Typography className='description'>{best.description}</Typography>
+                                                    </Grid>
+                                                    <Grid item>
+                                                        <Typography className='price'>Rs. {best.price}</Typography>
+                                                    </Grid>
+                                                </Grid>
+                                            </div>
+                                        </Grid>
+
+                                    ))
+                                }
+                            </Grid>
+                    }
                 </div>
 
                 <div className='customer-say' id="customerSaveSection">
-                    <Grid container directions="row" spacing={3}>
-                        <Grid item md={6} lg={6}>
-                            <img className='img' src={customerSays} alt="" />
-                        </Grid>
-                        <Grid item md={5} lg={5} m="auto">
-                            <Typography className='heading'>What Our Customer Say <span className='heading-part'>About US</span></Typography>
-                            <Typography className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
-                        </Grid>
-                    </Grid>
+                    {
+                        !this.props.is_desktop ?
+                            <Grid container directions="column" spacing={3}>
+                                <Grid item m="auto">
+                                    <Typography className='heading'>What Our Customer Say <span className='heading-part'>About US</span></Typography>
+                                </Grid>
+                                <Grid item>
+                                    <img className='img' src={customerSays} alt="" />
+                                </Grid>
+                                <Grid item m="auto">
+                                    <Typography className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
+                                </Grid>
+                            </Grid>
+                            :
+                            <Grid container directions="row" spacing={3}>
+                                <Grid item md={6} lg={6}>
+                                    <img className='img' src={customerSays} alt="" />
+                                </Grid>
+                                <Grid item md={5} lg={5} m="auto">
+                                    <Typography className='heading'>What Our Customer Say <span className='heading-part'>About US</span></Typography>
+                                    <Typography className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
+                                </Grid>
+                            </Grid>
+                    }
                 </div>
 
                 <div id="getStartedSection" className='get-started-with-byte'>
-                    <Grid container directions="row" spacing={3}>
-                        <Grid item md={5} lg={5} m="auto">
-                            <Typography className='heading'>Get Started with <span className='heading-part'>Byte today</span></Typography>
-                            <Typography className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
-                            <Grid container direction="row" spacing={2}>
-                                <Grid item>
-                                    <img src={playStoreIcon} alt="play store" />
+                    {
+                        !this.props.is_desktop ?
+                            <Grid container directions="column" spacing={2}>
+                                <Grid item m="auto">
+                                    <Typography className='heading'>Get Started with <span className='heading-part'>Byte today</span></Typography>
                                 </Grid>
-                                <Grid item>
-                                    <img src={appStoreIcon} alt="app store" />
+                                <Grid item m="auto">
+                                    <Typography className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
+                                </Grid>
+                                <Grid item m="auto">
+                                    <Grid container direction="row" spacing={2}>
+                                        <Grid item>
+                                            <img src={playStoreIcon} alt="play store"  />
+                                        </Grid>
+                                        <Grid item>
+                                            <img src={appStoreIcon} alt="app store" />
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                                <Grid item md={6} lg={6}>
+                                    <img className='img' src={chefIcon} alt="" />
                                 </Grid>
                             </Grid>
-                        </Grid>
-                        <Grid item md={6} lg={6}>
-                            <img className='img' src={chefIcon} alt="" />
-                        </Grid>
-                    </Grid>
+                            :
+                            <Grid container directions="row" spacing={3}>
+                                <Grid item md={5} lg={5} m="auto">
+                                    <Typography className='heading'>Get Started with <span className='heading-part'>Byte today</span></Typography>
+                                    <Typography className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
+                                    <Grid container direction="row" spacing={2}>
+                                        <Grid item>
+                                            <img src={playStoreIcon} alt="play store" />
+                                        </Grid>
+                                        <Grid item>
+                                            <img src={appStoreIcon} alt="app store" />
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                                <Grid item md={6} lg={6}>
+                                    <img className='img' src={chefIcon} alt="" />
+                                </Grid>
+                            </Grid>
+                    }
                 </div>
 
             </div>
