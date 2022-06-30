@@ -98,10 +98,14 @@ class Resturants extends React.Component {
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items: 4
+            items: 5
         },
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
+            breakpoint: { max: 3000, min: 1901 },
+            items: 4
+        },
+        laptop: {
+            breakpoint: { max: 1900, min: 1025 },
             items: 3
         },
         tablet: {
