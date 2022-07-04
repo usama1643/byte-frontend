@@ -47,6 +47,8 @@ class HomePage extends React.Component {
                 { image: selling8, name: "Madrasi Handi", description: "Lazeez", price: 300 },
                 { image: selling8, name: "Tikka Biryani", description: "Biryani Sultanat:", price: 300 },
                 { image: selling8, name: "Mughalai Biryani", description: "Biryani Sultanat", price: 300 },
+                { image: selling8, name: "Mughalai Biryani", description: "Biryani Sultanat", price: 300 },
+                { image: selling8, name: "Mughalai Biryani", description: "Biryani Sultanat", price: 300 },
             ]
         }
     }
@@ -62,13 +64,13 @@ class HomePage extends React.Component {
             <div className='main'>
                 <div className='main-banner-div' id="mainBannerSection">
                     <Grid container direction="row" spacing={3}>
-                        <Grid item md={7} lg={7} xs={12} sm={12} m="auto">
+                        <Grid item xs={12} sm={12} md={7} lg={7} xl={7} m="auto">
                             <div className='main-banner-content'>
                                 <Typography className='content-1'>Freshness in</Typography>
                                 <Typography className='content-2'>Every Bite</Typography>
                                 <Typography className='content-3'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr sitlorem ipsum</Typography>
 
-                                <Grid container direction="row" spacing={3}>
+                                <Grid container direction="row" spacing={2}>
                                     <Grid item>
                                         <Button size='large' className='order-now' variant='contained' onClick={()=> window.open("https://web.thebyte.app/en/", "_blank")}>Order Now</Button>
                                     </Grid>
@@ -202,7 +204,7 @@ class HomePage extends React.Component {
                                 <Grid item m="auto">
                                     <Typography className='heading'>What Our Customer Say <span className='heading-part'>About US</span></Typography>
                                 </Grid>
-                                <Grid item>
+                                <Grid item style={{ textAlign: "center" }}>
                                     <img className='img' src={customerSays} alt="" />
                                 </Grid>
                                 <Grid item m="auto">

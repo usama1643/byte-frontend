@@ -52,7 +52,12 @@ class Resturants extends React.Component {
     }
 
     componentDidMount() {
+        this.getResturants()
+    }
+
+    getResturants = () => {
         this.setState({
+            resturants_data: [], 
             is_loading: true
         })
         let resturants = [
@@ -69,28 +74,24 @@ class Resturants extends React.Component {
             "https://web.thebyte.app/en/store/Biryani-Sultanat---Gulberg/299699",
             "https://web.thebyte.app/en/store/Meal-Express/299613"
         ]
+        let resturants_data = []
         for (let i = 0; i < resturants.length; i++) {
-            this.getResturants(resturants[i])
+            let data = {
+                "api_key": "8349870a68beae18c130cb16435d1d14",
+                "user_id": resturants[i].split('/').pop()
+            }
+            ResturantApis.getResturant(data).then(data => {
+                let final_data = data['data']
+                final_data.resturant_url = resturants[i]
+                resturants_data.push(data['data'])
+                this.setState({
+                    resturants_data: resturants_data,
+                })
+            })
+    
         }
         this.setState({
             is_loading: false
-        })
-    }
-
-    getResturants = (resturant) => {
-        let { resturants_data } = this.state
-
-        let data = {
-            "api_key": "8349870a68beae18c130cb16435d1d14",
-            "user_id": resturant.split('/').pop()
-        }
-        ResturantApis.getResturant(data).then(data => {
-            let final_data = data['data']
-            final_data.resturant_url = resturant
-            resturants_data.push(data['data'])
-            this.setState({
-                resturants_data: resturants_data,
-            })
         })
     }
 
@@ -105,11 +106,11 @@ class Resturants extends React.Component {
             items: 4
         },
         laptop: {
-            breakpoint: { max: 1900, min: 1025 },
+            breakpoint: { max: 1900, min: 1024 },
             items: 3
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
+            breakpoint: { max: 1023, min: 464 },
             items: 2
         },
         mobile: {
@@ -155,12 +156,13 @@ class Resturants extends React.Component {
                                     </div>
                                     :
                                     <Carousel
+                                        style={{ position: 'unset important' }}
                                         swipeable={true}
                                         draggable={true}
                                         showDots={false}
                                         responsive={this.responsive}
                                         infinite={true}
-                                        autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                                        autoPlay={this.props.deviceType !== "mobile" ? false : false}
                                         autoPlaySpeed={3000}
                                         keyBoardControl={true}
                                         customTransition="all .0"
@@ -176,6 +178,7 @@ class Resturants extends React.Component {
                                                 <Paper className="resturants-paper">
                                                     <CardMedia
                                                         className="resturant-image"
+                                                        style={{ objectFit: 'fill' }}
                                                         component="img"
                                                         height="250"
                                                         image={resturant.logo}
