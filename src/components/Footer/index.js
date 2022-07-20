@@ -59,7 +59,7 @@ class Footer extends React.Component {
                                 <img src={twitterIcon} alt="twitter" height="45"/>
                             </Grid>
                         </Grid>
-                        <Typography className='app-name-description'>Discover our app</Typography>
+                        {/* <Typography className='app-name-description'>Discover our app</Typography>
                         <Grid container direction="row" spacing={2}>
                             <Grid item>
                                 <img src={playStoreIcon} alt="play store" />
@@ -67,7 +67,7 @@ class Footer extends React.Component {
                             <Grid item>
                                 <img src={appStoreIcon} alt="app store"/>
                             </Grid>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Grid>
             </div>

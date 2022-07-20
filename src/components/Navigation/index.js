@@ -27,10 +27,9 @@ class Navigation extends React.Component {
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarCollapse">
-                                
                                 <div class="navbar-nav ms-auto">
                                     {/* <a href="https://web.thebyte.app/en/" class="nav-item nav-link pe-4">About Us</a> */}
-                                    <a href="https://web.thebyte.app/en/" class="nav-item nav-link me-4">Resturants</a>
+                                    <a href="#ourResturantSection" class="nav-item nav-link me-4">Resturants</a>
                                     {/* <a href="https://web.thebyte.app/en/" class="nav-item nav-link me-4">Our Locations</a> */}
                                     {/* <a href="https://web.thebyte.app/en/" class="nav-item nav-link me-4">Contact</a> */}
                                     <a href="https://www.ycombinator.com/companies/byte" class="nav-item nav-link me-4">Careers</a>

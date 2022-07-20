@@ -75,19 +75,19 @@ class HomePage extends React.Component {
                                 <Typography className='content-3'>Order Now <img src={arrowDown} /></Typography>
                                 <Grid container direction="row" spacing={2} sx={{ justifyContent: { xs: "center", sm: "center", md: "left" }}}>
                                     <Grid item>
-                                        <a href='#getStartedSection' style={{ textDecuration: "none" }}>
+                                        <a onClick={() => window.open("https://web.thebyte.app/en/", "_blank")} style={{ textDecuration: "none" }}>
                                             <Button variant='contained' className='download-app'><img src={browserIcon} alt="" /></Button>
                                         </a>
                                     </Grid>
                                     <Grid item>
-                                        <a href='#getStartedSection' style={{ textDecuration: "none" }}>
+                                        {/* <a href='#getStartedSection' style={{ textDecuration: "none" }}> */}
                                             <Button variant='contained' className='download-app'><img src={playStore} alt="" /></Button>
-                                        </a>
+                                        {/* </a> */}
                                     </Grid>
                                     <Grid item>
-                                        <a href='#getStartedSection' style={{ textDecuration: "none" }}>
+                                        {/* <a href='#getStartedSection' style={{ textDecuration: "none" }}> */}
                                             <Button variant='contained' className='download-app'><img src={appStore} alt="" /></Button>
-                                        </a>
+                                        {/* </a> */}
                                     </Grid>
                                 </Grid>
                             </div>
@@ -98,7 +98,7 @@ class HomePage extends React.Component {
                     </Grid>
                 </div>
 
-                <div className='service-section' id="serviceSection">
+                {/* <div className='service-section' id="serviceSection">
                     <Typography className='main-heading'>We Offer <span className='heading-part'>Best Services</span></Typography>
                     <Typography className='sub-heading'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr.</Typography>
                     <Grid container justifyContent="" sx={{ flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" }, mt: 3 }} spacing={2}>
@@ -142,10 +142,10 @@ class HomePage extends React.Component {
                             </Grid>
                         </Grid>
                     </Grid>
-                </div>
+                </div> */}
 
                 <div className='our-resturants' id="ourResturantSection">
-                    <Typography className='main-heading'>Our <span className='heading-part'>Resturants</span></Typography>
+                    <Typography className='main-heading'><span className='heading-part'>Resturants</span></Typography>
                     <Typography className='sub-heading'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr.</Typography>
                     <Resturants is_desktop={this.props.is_desktop} />
                 </div>
