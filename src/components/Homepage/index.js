@@ -3,6 +3,9 @@ import { Typography, Grid, Button } from '@mui/material';
 import './index.scss';
 import sliderImage from '../../assets/sliderImage.png';
 import playStore from '../../assets/playStore.png';
+import appStore from '../../assets/appStore.png';
+import arrowDown from '../../assets/arrowDown.png';
+import browserIcon from '../../assets/browserIcon.png';
 import qualityFood from '../../assets/qualityFood.png';
 import superTaste from '../../assets/superTaste.png';
 import fastDelivery from '../../assets/fastDelivery.png';
@@ -68,22 +71,28 @@ class HomePage extends React.Component {
                             <div className='main-banner-content'>
                                 <Typography className='content-1'>Freshness in</Typography>
                                 <Typography className='content-2'>Every Bite</Typography>
-                                <Typography className='content-3'>lorem ipsum dolalr sit lorem ipsum dolalr sitlorem ipsum dolalr sitlorem ipsum</Typography>
 
-                                <Grid container direction="row" spacing={2}>
+                                <Typography className='content-3'>Order Now <img src={arrowDown} /></Typography>
+                                <Grid container direction="row" spacing={2} sx={{ justifyContent: { xs: "center", sm: "center", md: "left" }}}>
                                     <Grid item>
-                                        <Button size='large' className='order-now' variant='contained' onClick={()=> window.open("https://web.thebyte.app/en/", "_blank")}>Order Now</Button>
+                                        <a href='#getStartedSection' style={{ textDecuration: "none" }}>
+                                            <Button variant='contained' className='download-app'><img src={browserIcon} alt="" /></Button>
+                                        </a>
                                     </Grid>
                                     <Grid item>
                                         <a href='#getStartedSection' style={{ textDecuration: "none" }}>
                                             <Button variant='contained' className='download-app'><img src={playStore} alt="" /></Button>
-                                            <span className='download-button-content'>Download App</span>
+                                        </a>
+                                    </Grid>
+                                    <Grid item>
+                                        <a href='#getStartedSection' style={{ textDecuration: "none" }}>
+                                            <Button variant='contained' className='download-app'><img src={appStore} alt="" /></Button>
                                         </a>
                                     </Grid>
                                 </Grid>
                             </div>
                         </Grid>
-                        <Grid item md={5} lg={5} xs={12} sm={12} m="auto">
+                        <Grid item md={5} lg={5} xs={12} sm={12} m="auto" style={{ textAlign:"center" }}>
                             <img className='main-banner-image' src={sliderImage} alt="" />
                         </Grid>
                     </Grid>
@@ -204,11 +213,11 @@ class HomePage extends React.Component {
                                 <Grid item m="auto">
                                     <Typography className='heading'>What Our Customer Say <span className='heading-part'>About US</span></Typography>
                                 </Grid>
-                                <Grid item style={{ textAlign: "center" }}>
+                                <Grid item m="auto" style={{ textAlign: "center" }}>
                                     <img className='img' src={customerSays} alt="" />
                                 </Grid>
                                 <Grid item m="auto">
-                                    <Typography className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
+                                    <Typography style={{ textAlign: "center" }} className='description'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</Typography>
                                 </Grid>
                             </Grid>
                             :
@@ -244,7 +253,7 @@ class HomePage extends React.Component {
                                         </Grid>
                                     </Grid>
                                 </Grid>
-                                <Grid item md={6} lg={6}>
+                                <Grid item xs={12} sm={12} m="auto" style={{ textAlign: "center" }}>
                                     <img className='img' src={chefIcon} alt="" />
                                 </Grid>
                             </Grid>

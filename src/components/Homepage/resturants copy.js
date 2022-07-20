@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, CircularProgress, CardMedia, CardContent, Paper, Rating, Grid } from '@mui/material';
+import { Typography, CircularProgress, CardMedia, CardContent, Paper, Rating } from '@mui/material';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ResturantApis from "../../apis/ResturantApis";
@@ -57,7 +57,7 @@ class Resturants extends React.Component {
 
     getResturants = () => {
         this.setState({
-            resturants_data: [],
+            resturants_data: [], 
             is_loading: true
         })
         let resturants = [
@@ -88,7 +88,7 @@ class Resturants extends React.Component {
                     resturants_data: resturants_data,
                 })
             })
-
+    
         }
         this.setState({
             is_loading: false
@@ -152,43 +152,57 @@ class Resturants extends React.Component {
                                                     <Typography className="returant-name">{resturant.store_name}</Typography>
                                                     {/* <Typography className="returant-rating">({resturant.store_rating})</Typography> */}
                                                 </div>
-                                            )
-                                        }
+                                            )}
                                     </div>
                                     :
-                                    <>
-                                        <Grid container direction="row" spacing={1}>
-                                            {
-                                                resturants_data.map(resturant => (
-                                                    <Grid item xs={3} m="auto">
+                                    <Carousel
+                                        style={{ position: 'unset important' }}
+                                        swipeable={true}
+                                        draggable={true}
+                                        showDots={false}
+                                        responsive={this.responsive}
+                                        infinite={true}
+                                        autoPlay={this.props.deviceType !== "mobile" ? false : false}
+                                        autoPlaySpeed={3000}
+                                        keyBoardControl={true}
+                                        customTransition="all .0"
+                                        transitionDuration={100}
+                                        containerClass="carousel-container"
+                                        removeArrowOnDeviceType={["tablet", "mobile"]}
+                                        deviceType={this.props.deviceType}
+                                        dotListClass="custom-dot-list-style"
+                                        itemClass="carousel-item-padding-40-px"
+                                    >
+                                        {
+                                            resturants_data && resturants_data.map(resturant =>
+                                                <Paper className="resturants-paper">
+                                                    <CardMedia
+                                                        className="resturant-image"
+                                                        style={{ objectFit: 'fill' }}
+                                                        component="img"
+                                                        height="250"
+                                                        image={resturant.logo}
+                                                        alt={resturant.store_name}
+                                                        onClick={() => this.openResturant(resturant.resturant_url)}
+                                                    />
+                                                    <CardContent>
                                                         <Rating
-                                                            style={{ backgroundColor: "#FDC55E", color: "#FFFFFF", borderRadius: '50px', top: '185px', left: '10px' }}
+                                                            style={{ backgroundColor: "#FDC55E", color: "#FFFFFF", borderRadius: '50px', bottom: '50px' }}
                                                             name="read-only"
                                                             value={resturant.store_rating}
                                                             readOnly
                                                         />
-                                                        <div className='resturants-paper'>
-                                                            <Grid container direction="column" spacing={2}>
-                                                                <Grid item>
-                                                                    <img src={resturant.logo} className="img" alt="" />
-                                                                    {/* <Rating
-                                                                        style={{ backgroundColor: "#FDC55E", color: "#FFFFFF", borderRadius: '50px', bottom: '10px' }}
-                                                                        name="read-only"
-                                                                        value={resturant.store_rating}
-                                                                        readOnly
-                                                                    /> */}
-                                                                </Grid>
-                                                                <Grid item>
-                                                                    <Typography className='name'>{resturant.store_name}</Typography>
-                                                                </Grid>
-                                                            </Grid>
-                                                        </div>
-                                                    </Grid>
-
-                                                ))
-                                            }
-                                        </Grid>
-                                    </>
+                                                        <Typography className="heading" gutterBottom>{resturant.store_name}</Typography>
+                                                        {/* {
+                                                resturant.tags.map(tag =>
+                                                    <span className="badge resturant-badge">{tag}</span>
+                                                )
+                                            } */}
+                                                    </CardContent>
+                                                </Paper>
+                                            )
+                                        }
+                                    </Carousel>
                             }
                         </>
                 }

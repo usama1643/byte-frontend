@@ -66,7 +66,7 @@
 
     .content-3 {
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         font-size: 14px;
         font-weight: 400;
         color: #464646;
@@ -227,13 +227,22 @@
     }
 
     .resturants-paper {
-        margin-top: 30px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-bottom: 10px;
         background-color: #FFFFFF;
-        box-shadow: 0px 4px 80px 0px #0000000A;
+        border: 1px solid #E7E7E7;
+        border-radius: 10.4669px;
+        height: 250px;
 
+        .img {
+            height: 190px;
+            object-fit: fill !important;
+        }
+
+        .name {
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #383535;
+        }
         .heading {
             margin-top: -30px !important;
             color: #383535;
@@ -245,18 +254,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-    }
-
-    .resturant-badge {
-        margin-bottom: 5px;
-        background-color: #f3f3f4;
-        color: #464646;
-        text-transform: capitalize;
-        font-size: 12px !important;
-        font-weight: 400;
-        min-height: 30px;
-        text-align: center;
-        border-radius: 3px;
     }
 }
 

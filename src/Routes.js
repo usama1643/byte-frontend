@@ -16,7 +16,7 @@ export const RouteStrings = {
 
 function Routing() {
     const theme = useTheme();
-    const is_desktop = useMediaQuery(theme.breakpoints.up('sm'));
+    const is_desktop = useMediaQuery(theme.breakpoints.up('md'));
     return (
         <>
             <Navigation />
